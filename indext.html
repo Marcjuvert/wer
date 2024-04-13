@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Envelope + Letter (Open/Close on Click)</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="envelope-wrapper">
+            <div class="envelope">
+                <div class="letter">
+                    <div class="text">
+                        <strong>Dear Maria</strong>
+                        <p>
+                            Happy birthday maria sana matupad lhat ng hiling mo
+                            and thank you dhil nakilala kita at naging mag kaibigan tyo 
+                            at thank you bonding natin sa chat at khit sa 
+                            personal wag kang mag alala hhnd ko na 
+                            mo mday yung epic mo dhil nabura ko na yun
+                            thank you sa pang asar moko kay ave HAHAHA
+                            khit na block mo na ako sa social media
+                            sa personal ituturing kitang kaibigan.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="heart"></div>
+        </div>
+    </div>
+    <script>
+        const envelope = document.querySelector('.envelope-wrapper');
+        envelope.addEventListener('click', () => {
+            envelope.classList.toggle('flap');
+        });
+    </script>
+</body>
+</html>
